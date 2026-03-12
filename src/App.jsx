@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Check, Info, TrendingUp, Target, Zap, Waves, MoveRight, ShieldAlert, Award } from 'lucide-react'
+import { Check, Clock, Info, Target, TrendingUp, Zap, Waves, ShieldAlert, Award } from 'lucide-react'
 import './App.css'
 
 const CRITERIA = [
-  { id: 'trend', text: 'Identify trend direction (mark structure)', icon: <TrendingUp size={20} /> },
-  { id: 'sr', text: 'Locate SR levels (key support/resistance)', icon: <Target size={20} /> },
-  { id: 'break', text: 'Spot last swing high and wait for its break', icon: <Zap size={20} /> },
-  { id: 'sweep', text: 'Watch for sweep of order block (liquidity grab)', icon: <Waves size={20} /> },
-  { id: 'displacement', text: 'Displacement (strong move) to break last high', icon: <MoveRight size={20} /> },
-  { id: 'retracement', text: 'Enter on retracement into strong order block', icon: <ShieldAlert size={20} /> },
+  { id: '1hr-trend', text: 'First 1hr trend confirmed', icon: <TrendingUp size={20} /> },
+  { id: '15min-sweep', text: '15min sweep occurred', icon: <Waves size={20} /> },
+  { id: '1min-mss', text: '1min MSS present', icon: <Zap size={20} /> },
+  { id: '1min-fvg', text: '1min FVG present', icon: <Target size={20} /> },
+  { id: 'fvg-retest', text: 'Last entry on FVG retest', icon: <ShieldAlert size={20} /> },
+{ id: 'timing', text: 'Timing: 12:30PM-4PM or 6:45PM-9PM', icon: <Clock size={20} /> }
 ]
 
 function App() {
