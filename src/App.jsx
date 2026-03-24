@@ -4,12 +4,13 @@ import { Check, Clock, Info, Target, TrendingUp, Zap, Waves, ShieldAlert, Award 
 import './App.css'
 
 const CRITERIA = [
-  { id: '1hr-trend', text: 'First 1hr trend confirmed', icon: <TrendingUp size={20} /> },
+
+  { id: '1h15-trend', text: 'First 1h 15m trend confirmed', icon: <TrendingUp size={20} /> },
   { id: '15min-sweep', text: '15min sweep occurred', icon: <Waves size={20} /> },
   { id: '1min-mss', text: '1min MSS present', icon: <Zap size={20} /> },
   { id: '1min-fvg', text: '1min FVG present', icon: <Target size={20} /> },
   { id: 'fvg-retest', text: 'Last entry on FVG retest', icon: <ShieldAlert size={20} /> },
-{ id: 'timing', text: 'Timing: 12:30PM-4PM or 6:45PM-9PM', icon: <Clock size={20} /> }
+  { id: 'timing', text: 'Timing: 12:30PM-2:30PM or 5:30PM-9:30PM', icon: <Clock size={20} /> }
 ]
 
 function App() {
