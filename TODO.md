@@ -1,6 +1,10 @@
-# Trading Checklist Update TODO
+# Trading Rules Update to Direction Sequence
 
-- [x] 1. Create TODO.md and confirm plan
-- [x] 2. Edit src/App.jsx with new CRITERIA
-- [x] 3. Verify changes
-- [x] 4. Complete task
+- [ ] 1. Create TODO.md with update steps
+- [x] 2. Update src/App.jsx CRITERIA to new 4 rules only
+
+- [x] 3. Verify app functionality
+
+- [x] 4. Mark complete and attempt_completion
+
+

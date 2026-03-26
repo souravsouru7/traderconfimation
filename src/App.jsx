@@ -1,16 +1,14 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
+
 import { Check, Clock, Info, Target, TrendingUp, Zap, Waves, ShieldAlert, Award } from 'lucide-react'
 import './App.css'
 
 const CRITERIA = [
-
-  { id: '1h15-trend', text: 'First 1h 15m trend confirmed', icon: <TrendingUp size={20} /> },
-  { id: '15min-sweep', text: '15min sweep occurred', icon: <Waves size={20} /> },
-  { id: '1min-mss', text: '1min MSS present', icon: <Zap size={20} /> },
-  { id: '1min-fvg', text: '1min FVG present', icon: <Target size={20} /> },
-  { id: 'fvg-retest', text: 'Last entry on FVG retest', icon: <ShieldAlert size={20} /> },
-  { id: 'timing', text: 'Timing: 12:30PM-2:30PM or 5:30PM-9:30PM', icon: <Clock size={20} /> }
+  { id: 'next-fvg', text: 'Next FVG', icon: <Target size={20} /> },
+  { id: 'next-liquidity', text: 'Next liquidity', icon: <Waves size={20} /> },
+  { id: 'next-bos', text: 'Next break of structure', icon: <TrendingUp size={20} /> },
+  { id: 'retest-fvg', text: 'Last retest to FVG', icon: <ShieldAlert size={20} /> }
 ]
 
 function App() {
