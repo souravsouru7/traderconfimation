@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 import { Check, Clock, Info, Target, TrendingUp, Zap, Waves, ShieldAlert, Award } from 'lucide-react'
 import './App.css'
